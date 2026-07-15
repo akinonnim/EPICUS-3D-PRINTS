@@ -18,7 +18,8 @@
 
 - [ ] Navegação fixa (sticky) com links suaves para seções
 - [ ] Seção Hero com banner chamativo
-- [ ] Seção de catálogo de produtos
+- [ ] Seção de informações da Epicus3D
+- [ ] Seção de catálogo de produtos e serviços
 - [ ] Seção de curiosidades sobre a impressão 3D
   - [ ] Como funciona a imrpessão 3D
   - [ ] Quanto tempo leva a impressão 3D
