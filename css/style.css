@@ -219,9 +219,8 @@ ul li a:hover::after {
   font-weight: 700;
 }
 
-.sub {
+.subtitle {
   font-size: var(--sub-size);
-  margin-bottom: 1rem;
   color: var(--text-secondary);
 }
 
