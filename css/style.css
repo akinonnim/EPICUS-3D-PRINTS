@@ -386,14 +386,14 @@ ul li a:hover::after {
   display: flex;
   width: 110%;
   min-height: 30rem;
-  margin: 2rem;
+  height: 123rem;
   position: relative;
-  border: solid 1px var(--border-color);
+  /* border: solid 1px var(--border-color); */
   border-radius: var(--border-radius);
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-around;
+  align-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .curious-header {
@@ -402,11 +402,12 @@ ul li a:hover::after {
   margin-left: -38rem;
 }
 .curious-element {
+  background-color: var(--main-color);
   padding: 2rem;
   border: solid 1px var(--border-color);
   border-radius: var(--border-radius);
-  min-width: 40rem;
-  min-height: 20rem;
+  min-width: 30rem;
+  /* min-height: 20rem; */
   overflow: hidden;
 }
 #curious-element-1 {
@@ -427,13 +428,17 @@ ul li a:hover::after {
   display: flex;
   flex-direction: row-reverse;
 }
-.paragraph{
-  border: solid;
+.paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--border-color);
+  border-radius: var(--border-radius);
   width: 20rem;
 }
 #curious-element-2 {
   margin-top: 1rem;
-  margin-left: 20rem;
+  margin-left: 30rem;
   position: relative;
   display: flex;
   width: 48rem;
@@ -453,12 +458,12 @@ ul li a:hover::after {
 }
 #curious-element-4 {
   margin-top: 1rem;
-  margin-left: 20rem;
+  /* margin-left: 20rem; */
   position: relative;
   display: flex;
-  width: 48rem;
+  width: 100%;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
 }
 .curious-img {
@@ -475,11 +480,6 @@ ul li a:hover::after {
   height: 100%;
   object-fit: cover;
 }
-
-
-
-
-
 
 /* ========== RESPONSIVIDADE ========== */
 @media (min-width: 1024px) {
