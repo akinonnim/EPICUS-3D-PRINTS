@@ -117,7 +117,7 @@ body {
   align-items: center;
 
   height: 10rem;
- }
+}
 .nav-container {
   height: var(--nav-height);
   width: 100%;
@@ -145,7 +145,7 @@ body {
 }
 
 /* Menu */
-ul {
+.nav-container ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -487,7 +487,85 @@ ul li a:hover::after {
   height: 100%;
   object-fit: cover;
 }
+/* ========== FOOTER ========== */
+.container-footer {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem var(--padding-value);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--surface-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: left;
+}
+.footer-col h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #fff, #aaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+.footer-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 90%;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.footer-links li a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition:
+    color 0.2s,
+    transform 0.2s;
+  display: inline-block;
+}
 
+.footer-links li a:hover {
+  color: #fff;
+  transform: translateX(4px);
+}
+.footer-author {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-author strong {
+  color: #fff;
+}
 /* ========== RESPONSIVIDADE ========== */
 @media (min-width: 1024px) {
   .hero-banner-container {
