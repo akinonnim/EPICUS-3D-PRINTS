@@ -145,14 +145,22 @@ body {
 .logo {
   width: var(--logo-size);
   height: var(--logo-size);
+  max-width: 100%;
+  /* margin-right: -25rem; */
   border: 1px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
-
+.logo img{
+    width: 100%;
+  height: auto;
+  max-height: var(--banner-height);
+  object-fit: cover;
+  display: block;
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
 /* Menu */
 .nav-container ul {
   list-style: none;
